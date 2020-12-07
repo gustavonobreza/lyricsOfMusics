@@ -28,7 +28,7 @@ h1 {
     Ubuntu, Cantarell, "Segoe UI", "Helvetica Neue", sans-serif;
   font-size: 20px;
 
-  min-height: 70vh;
+  min-height: 38vh;
   margin-bottom: 6vw;
 }
 
@@ -71,6 +71,7 @@ input[type="text"] {
 }
 
 footer {
+  margin-top: 12px;
   /* display: flex;
   justify-content: space-between; */
   text-align: center;
@@ -83,6 +84,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  * {
+    border: 0ch;
+    padding: 0%;
+    box-sizing: border-box;
+  }
   .response {
     width: 270px;
   }
@@ -98,5 +104,8 @@ footer {
     display: block;
     font-size: 20px;
     margin-top: 18px;
+  }
+  footer{
+    margin-top: 37px;
   }
 }
