@@ -41,7 +41,8 @@ h1 {
   background-color: rgb(221, 221, 221);
   border-radius: 7px;
 }
-.input_user:focus{
+
+.input_user:focus {
   border: 0.1px solid;
   border-color: rgb(70, 165, 32);
 }
@@ -55,6 +56,18 @@ input[type="text"] {
   margin: 12px auto;
   border-radius: 6px;
   outline-style: none;
+}
+
+.title_music{
+  /* line-height: 32px; */
+  margin: 0;
+  margin-top: 42px;
+}
+.title_music h1{
+  margin: 0;
+}
+.title_music h3{
+  margin: 0;
 }
 
 footer {

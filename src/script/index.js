@@ -11,6 +11,7 @@ async function findLyrics(artist, song) {
 let inpSong = document.querySelector("#song");
 let inpArts = document.querySelector("#artist");
 let resultDysplay = document.querySelector(".response");
+let title_music = document.querySelector(".title_music");
 
 // onEnter
 document.body.addEventListener("keyup", (event) => {
@@ -49,7 +50,13 @@ async function doSubmit() {
   }
 
   resultDysplay.innerText = data.mus["0"].text;
-
+  
+  title_music.innerHTML = `
+  <div class="title">
+    <h1>${data.mus["0"].name}</h1>
+    <h3>${data.art.name}</h3>
+  </div>  <br>
+  `
   inpSong.value = "";
   inpArts.value = "";
 }
