@@ -8,11 +8,22 @@ async function findLyrics(artist, song) {
   );
 }
 
-async function doSubmit() {
-  let inpSong = document.querySelector("#song");
-  let inpArts = document.querySelector("#artist");
-  let resultDysplay = document.querySelector(".response");
+let inpSong = document.querySelector("#song");
+let inpArts = document.querySelector("#artist");
+let resultDysplay = document.querySelector(".response");
 
+// onEnter
+document.body.addEventListener("keyup", (event) => {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    doSubmit();
+    inpArts.blur();
+    inpSong.blur();
+  }
+});
+// -----onEnter
+
+async function doSubmit() {
   resultDysplay.innerText = "";
 
   if (inpArts.value == "" || inpArts.value == " ") {
@@ -28,7 +39,11 @@ async function doSubmit() {
   );
   const data = await lyricsResponse.json();
   console.log(data);
-  if (data.type === "notfound" || data.type === "song_notfound" || data.type === "") {
+  if (
+    data.type === "notfound" ||
+    data.type === "song_notfound" ||
+    data.type === ""
+  ) {
     typographicalError();
     return "";
   }
@@ -41,8 +56,6 @@ async function doSubmit() {
 
 function mistake() {
   alert("Please, enter the two fields below.");
-
-  
 }
 
 function typographicalError() {
