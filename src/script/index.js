@@ -4,7 +4,7 @@ const key = "7be557037b95b4526159e54039ece1ad";
 // https://api.vagalume.com.br/search.php?apikey=7be557037b95b4526159e54039ece1ad&art=madonna&mus=holiday
 async function findLyrics(artist, song) {
   return await fetch(
-    `https://api.vagalume.com.br/search.php?apikey=${process.env.API_key}&art=${artist}&mus=${song}`
+    `https://api.vagalume.com.br/search.php?apikey=${key}&art=${artist}&mus=${song}`
   );
 }
 
