@@ -38,6 +38,7 @@ h1 {
   cursor: pointer;
   margin-right: 8px;
   outline-style: none;
+  outline: none;
   background-color: rgb(221, 221, 221);
   border-radius: 7px;
 }
@@ -56,8 +57,11 @@ input[type="text"] {
   margin: 12px auto;
   border-radius: 6px;
   outline-style: none;
+  outline: none;
 }
-
+#search{
+  box-sizing: border-box;
+}
 .title_music{
   /* line-height: 32px; */
   margin: 0;
