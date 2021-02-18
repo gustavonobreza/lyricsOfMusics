@@ -2,4 +2,4 @@
 ![](./public/favicon/Search-Lirycs.gif)
 
 ## I need your help! 
-### If your can to biuld a UI to this project, I'll be very happy! So open a PR and collaborate with the project 😁
+### If you can to build a UI to this project, I will be very happy! So open a PR and collaborate with the project 😁
